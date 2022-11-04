@@ -319,6 +319,12 @@ footer {
 }
 
 .main-game__card {
+  display: flex;
+  flex-direction: column;
+  min-width: 206px;
+}
+
+.main-game__card__home {
   display: none;
   flex-direction: column;
   min-width: 206px;
@@ -359,7 +365,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
   background-color: #34383f;
   border-radius: 20px;
 }
@@ -481,6 +486,10 @@ footer {
 .group__game__info__time {
   font-weight: 400;
   font-size: 14px;
+}
+
+.mobile-hidden {
+  display: none;
 }
 
 /*  I M A G E N E S  */
@@ -710,6 +719,10 @@ img {
     flex-wrap: wrap-reverse;
     max-height: 100px;
   }
+
+  .mobile-hidden {
+    display: block;
+  }
 }
 /*  M E D I A  Q U E R I E S  768px  */
 /*  MENU  */
@@ -764,12 +777,15 @@ img {
   }
   #main-game {
     display: grid;
+    grid-template-areas:
+      "img card"
+      "galery .";
     grid-template-columns: 4fr 1fr;
     grid-template-rows: auto auto;
     column-gap: 2rem;
     align-items: center;
   }
-  .main-game__card {
+  .main-game__card__home {
     display: flex;
   }
   #catalogue {
@@ -777,6 +793,19 @@ img {
     grid-column-gap: 6%;
     grid-row-gap: 20px;
   }
+
+  .mini-galery {
+    grid-area: galery;
+  }
+
+  .main-game__img {
+    grid-area: img;
+  }
+
+  .main-game__card {
+    grid-area: card;
+  }
+
   /*  MIS JUEGOS  */
   .group {
     flex-direction: row;

@@ -7,32 +7,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perfil</title>
   <link rel="shortcut icon" href="../images/logo.svg">
+  <!-- Bootstrap CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
-  <header id="menu">
-    <a class="identidad" href="../pages/inicio.html">
-      <img class="logo-nav" src="../images/logo.svg" alt="logo de la tienda">
-      <p class="anchor-logo">NOCTURNE</p>
-    </a>
-    <ul class="izquierda">
-      <li><a href="../pages/tienda.html">Tienda</a></li>
-      <li><a href="../pages/ofertas.html">Ofertas</a></li>
-      <li><a href="../pages/novedades.html">Novedades</a></li>
-    </ul>
-    <div class="searchbar">
-      <input class="input" type="text" name="buscar-juego" id="" placeholder="Buscar juego">
-      <img class="icon-search" src="https://img.icons8.com/ios-glyphs/30/85888d/search--v2.png" />
-    </div>
-    <ul class="derecha">
-      <li><a href="../pages/juegos-deseados.html">Juegos deseados</a></li>
-      <li><a href="../pages/mis-juegos.html">Mis juegos</a></li>
-      <li><a href="../pages/carrito.html">Carrito</a></li>
-    </ul>
-    <div class="user">
-      <a href="../pages/perfil.html">Perfil</a>
-      <img class="avatar" src="../images/avatar.jpg" alt="avatar del jugador">
+  <header>
+    <div class="top-position-nav">
+      <nav id="menu-desktop">
+        <a class="identidad" href="../pages/inicio.html">
+          <img class="logo-nav" src="../images/logo.svg" alt="logo de la tienda">
+          <p class="anchor-logo">NOCTURNE</p>
+        </a>
+        <ul class="izquierda">
+          <li><a href="../pages/tienda.html">Tienda</a></li>
+          <li><a href="../pages/ofertas.html">Ofertas</a></li>
+          <li><a href="../pages/novedades.html">Novedades</a></li>
+        </ul>
+        <div class="searchbar">
+          <input class="input" type="text" name="buscar-juego" id="" placeholder="Buscar juego">
+          <img class="icon-search" src="https://img.icons8.com/ios-glyphs/30/85888d/search--v2.png" />
+        </div>
+        <ul class="derecha">
+          <li><a href="../pages/juegos-deseados.html">Juegos deseados</a></li>
+          <li><a href="../pages/mis-juegos.html">Mis juegos</a></li>
+          <li><a href="../pages/carrito.html">Carrito</a></li>
+        </ul>
+        <div class="user">
+          <a href="../pages/perfil.html">Perfil</a>
+          <img class="avatar" src="../images/avatar.jpg" alt="avatar del jugador">
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="menu-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+            </span>
+          </button>
+          <div class="searchbar navbar-brand">
+            <input class="input" type="text" name="buscar-juego" id="" placeholder="Buscar juego">
+            <img class="icon-search" src="https://img.icons8.com/ios-glyphs/30/85888d/search--v2.png" />
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/ofertas.html">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/novedades.html">Novedades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/juegos-deseados.html">Juegos deseados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../pages/mis-juegos.html">Mis juegos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/carrito.html">Carrito</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
   </header>
   <div class="line-nav"></div>
@@ -149,6 +194,10 @@
         </div>
       </div>
   </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
