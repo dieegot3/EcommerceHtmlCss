@@ -1,22 +1,17 @@
 /*  I M P O R T A C I O N E S  */
-
 @font-face {
   font-family: Inter;
   src: url(../fonts/Inter/Inter-VariableFont_slnt_wght.ttf);
 }
-
 @font-face {
   font-family: Sora;
   src: url(../fonts/Sora/Sora-VariableFont_wght.ttf);
 }
-
 @font-face {
   font-family: Audiowide;
   src: url(../fonts/Audiowide/Audiowide-Regular.ttf);
 }
-
 /*  A N U L A R  B O O T S T R A P  */
-
 *,
 ::after,
 ::before {
@@ -73,7 +68,6 @@ h6 {
 }
 
 /*  G E N E R A L E S  */
-
 * {
   font-family: Inter;
   color: #f0f0f0;
@@ -82,7 +76,6 @@ h6 {
 }
 
 /*  G R I D S  */
-
 #main-game {
   display: grid;
   row-gap: 1rem;
@@ -118,9 +111,7 @@ h6 {
 
 .profile {
   display: grid;
-  grid-template-areas:
-    "user . . avatar"
-    "achievements . lv avatar";
+  grid-template-areas: "user . . avatar" "achievements . lv avatar";
   grid-template-columns: 340px 1fr 160px 300px;
   grid-template-rows: 1fr 1fr;
   height: 300px;
@@ -132,7 +123,6 @@ h6 {
 }
 
 /*  M E N U  */
-
 .top-position-nav {
   width: 100%;
   background-color: #28262c;
@@ -279,7 +269,6 @@ h6 {
 }
 
 /*  E T I Q U E T A S  */
-
 body {
   background-color: #28262c;
 }
@@ -321,7 +310,6 @@ footer {
 }
 
 /*  B L O Q U E S  */
-
 .login {
   width: 18%;
   margin: auto;
@@ -374,7 +362,6 @@ footer {
 }
 
 /*  E L E M E N T O S  */
-
 .catalogue-game__card {
   display: flex;
   align-items: center;
@@ -419,7 +406,6 @@ footer {
 }
 
 /*  T E X T O  */
-
 .main-game__card__text {
   line-height: 24px;
   font-size: 14px;
@@ -452,6 +438,7 @@ footer {
   font-size: 20px;
   font-weight: 700;
 }
+
 .catalogue-game__card__info {
   padding: 0 12px;
   min-width: 114px;
@@ -494,7 +481,6 @@ footer {
 }
 
 /*  I M A G E N E S  */
-
 img {
   border-radius: 10px;
   object-fit: cover;
@@ -555,7 +541,6 @@ img {
 }
 
 /* S E P A R A D O R E S */
-
 .line-nav {
   background-color: #34383f;
   margin-top: 70px;
@@ -578,7 +563,6 @@ img {
 }
 
 /* B O T O N E S*/
-
 .btn-principal {
   display: flex;
   align-items: center;
@@ -613,7 +597,6 @@ img {
 }
 
 /*  I C O N O S  */
-
 .language-icon {
   height: 14px;
   padding-left: 6px;
@@ -634,7 +617,6 @@ img {
 }
 
 /*  F O O T E R  */
-
 #footer {
   width: 86%;
   margin: auto;
@@ -686,7 +668,6 @@ img {
 }
 
 /*  T R A N S I C I O N E S  */
-
 #menu-desktop ul li {
   transition: scale 0.3s ease-in-out;
 }
@@ -712,7 +693,7 @@ img {
 }
 
 #menu-desktop .searchbar {
-  transition: box-shadow 0.2s ease-in-out; border-radius 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, border-radius 0.2s ease-in-out;
 }
 
 #menu-desktop .searchbar:hover {
@@ -721,18 +702,14 @@ img {
 }
 
 /*  M E D I A  Q U E R I E S  480px  */
-
 @media (min-width: 480px) {
   .footer__top__options {
     flex-wrap: wrap-reverse;
     max-height: 100px;
   }
 }
-
 /*  M E D I A  Q U E R I E S  768px  */
-
 /*  MENU  */
-
 @media (min-width: 768px) {
   .top-position-nav {
     height: 74px;
@@ -740,60 +717,48 @@ img {
   .navbar {
     display: none;
   }
-
   #menu-desktop {
     display: flex;
     padding-top: 2rem;
   }
-
   #menu-desktop .izquierda {
     min-width: 170px;
     padding: 0;
     margin: 0;
   }
-
   #menu-desktop .derecha {
     min-width: 252px;
     padding: 0;
     margin: 0;
   }
-
   #menu-desktop ul li a {
     padding: 0;
     font-size: 10px;
   }
-
   #menu-desktop .searchbar {
     width: 100%;
     margin-left: 2rem;
   }
-
   #menu-desktop .input {
     font-size: 11px;
     height: 40px;
     border-radius: 15px;
   }
-
   #menu-desktop .searchbar .icon-search {
     right: 1rem;
   }
-
   #menu-desktop .user {
     margin: 0;
   }
-
   #menu-desktop .user a {
     margin: 0;
     padding: 0 2.8rem 0 0.7rem;
     font-size: 12px;
   }
-
   /*  INICIO  */
-
   .carousel-item .carousel-caption {
     display: none;
   }
-
   #main-game {
     display: grid;
     grid-template-columns: 4fr 1fr;
@@ -801,129 +766,99 @@ img {
     column-gap: 2rem;
     align-items: center;
   }
-
   .main-game__card {
     display: flex;
   }
-
   #catalogue {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 6%;
     grid-row-gap: 20px;
   }
-
   /*  MIS JUEGOS  */
-
   .group {
     flex-direction: row;
     align-items: center;
     gap: 2rem;
   }
-
   .group__game {
     margin: 1rem 2rem 1rem 0;
   }
-
   /* FOOTER */
-
   #footer {
     font-size: 12px;
   }
-
   .footer__icon {
     padding-left: 1rem;
   }
-
   .footer__top__options {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
   }
-
   .footer__top__options li {
     margin: 0.5rem;
     display: contents;
   }
 }
-
 /*  M E D I A  Q U E R I E S  1024px  */
-
 /*  MENU  */
-
 @media (min-width: 1024px) {
   #container {
     width: 70%;
   }
-
   #menu-desktop .identidad {
     display: flex;
   }
-
   #menu-desktop .anchor-logo {
     font-size: 1rem;
     letter-spacing: 3px;
   }
-
   .logo-nav {
     margin-right: 4px;
   }
-
   #menu-desktop .izquierda {
     min-width: 210px;
     padding: 0;
     margin: 1rem;
   }
-
   #menu-desktop .derecha {
     min-width: 300px;
     margin-right: 1rem;
   }
-
   #menu-desktop ul li a {
     padding: 0;
     font-size: 12px;
   }
-
   /* FOOTER */
-
   #footer {
     width: 70%;
   }
 }
-
 /*  M E D I A  Q U E R I E S  1200px  */
-
 /*  MENU  */
-
 @media (min-width: 1200px) {
   #menu-desktop {
     width: 100%;
     margin: 0;
   }
-
   #menu-desktop .identidad {
     padding-left: 2rem;
   }
-
   #menu-desktop .logo-nav {
     width: 32px;
     margin-right: 1rem;
   }
-
   #menu-desktop .anchor-logo {
     font-size: 18px;
     letter-spacing: 6px;
   }
-
   #menu-desktop .izquierda {
     min-width: 250px;
   }
-
   #menu-desktop .searchbar {
     margin-left: 0;
     width: 18%;
   }
-
   #menu-desktop .input {
     font-size: 12px;
     min-width: 180px;
@@ -931,37 +866,30 @@ img {
     padding: 0px 0px 0px 30px;
     border-radius: 20px;
   }
-
   #menu-desktop .searchbar .icon-search {
     width: 26px;
     position: absolute;
     right: 1rem;
     background-color: #34383f;
   }
-
   #menu-desktop ul li a {
     padding: 0.5rem;
   }
-
   #menu-desktop .user {
     margin-right: 2rem;
   }
-
   #menu-desktop .user a {
     font-size: 1rem;
     padding: 0 3.5rem 0 1.5rem;
   }
   /* INICIO */
-
   #catalogue {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 6%;
     grid-row-gap: 20px;
   }
 }
-
 /*  P R U E B A S  */
-
 /* #menu-mobile .menu-icon span {
   background-color: #f0f0f0;
   height: 2px;
@@ -994,3 +922,5 @@ img {
   margin: 1rem auto 0;
   width: 85px;
 } */
+
+/*# sourceMappingURL=style.css.map */

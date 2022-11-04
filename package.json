@@ -1,0 +1,28 @@
+{
+  "name": "pre-2",
+  "version": "1.0.0",
+  "description": "Esta es la primer prueba de SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css" :  "sass  styles/style.scss styles/style.css",
+    "watch-css" : "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dieegot3/PreEntrega2-Diaz.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "dieegot3",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dieegot3/PreEntrega2-Diaz/issues"
+  },
+  "homepage": "https://github.com/dieegot3/PreEntrega2-Diaz#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20",
+    "sass": "^1.55.0"
+  }
+}
