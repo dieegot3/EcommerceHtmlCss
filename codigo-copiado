@@ -1,0 +1,21 @@
+.profile {
+  display: grid;
+  grid-template-areas: "user . . avatar" "achievements . lv avatar";
+  grid-template-columns: 340px 1fr 160px 300px;
+  grid-template-rows: 1fr 1fr;
+  height: 300px;
+  border: #34383f;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  margin-bottom: 3rem;
+}
+
+#catalogue--big {
+  display: grid;
+  grid-template-columns: repeat(3, 0.33fr);
+  grid-auto-rows: 160px;
+  grid-column-gap: 6px;
+  grid-row-gap: 12px;
+  justify-content: space-between;
+}
