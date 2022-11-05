@@ -4,16 +4,149 @@
   @media (min-width: 1024px) {
     width: 70%;
   }
+  .profile {
+    display: grid;
+    grid-template-areas:
+      ". avatar"
+      "user avatar"
+      "lv avatar"
+      "logros logros";
+    align-items: end;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    @media (min-width: 768px) {
+      grid-template-areas:
+        "user . . avatar"
+        "logros . lv avatar";
+      grid-template-columns: 3fr 1fr 1.4fr 2fr;
+      grid-template-rows: 1fr 1fr;
+      max-height: 320px;
+      border: #34383f;
+      border-style: solid;
+      border-radius: 20px;
+      border-width: 2px;
+      padding: 1rem;
+      margin-bottom: 3rem;
+    }
+    .profile__user {
+      grid-area: user;
+    }
+    .profile__achievements {
+      grid-area: logros;
+      .profile__achievements__groups {
+        width: 100%;
+        display: flex;
+        gap: 4px;
+        .profile__achievements__groups__icon {
+          margin-top: 1rem;
+          width: 100%;
+          max-width: 46px;
+        }
+      }
+    }
+    .profile__lv {
+      grid-area: lv;
+      .profile__lv__groups {
+        width: 100%;
+        display: flex;
+        gap: 4px;
+      }
+    }
+    .profile__avatar {
+      width: 100%;
+      min-width: 136px;
+      max-width: 220px;
+      grid-area: avatar;
+      @media (min-width: 768px) {
+        height: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  .group {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+    }
+    .group__game {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      margin: 1rem 0;
+      @media (min-width: 768px) {
+        margin: 1rem 2rem 1rem 0;
+      }
+      .group__game__img {
+        width: 90px;
+        height: 90px;
+      }
+      .group__game__info {
+        margin-left: 10px;
+        min-width: 152px;
+        .group__game__info__time {
+          font-weight: 400;
+          font-size: 14px;
+        }
+        .group__game__info__other {
+          font-size: 14px;
+          font-weight: 300;
+          font-style: italic;
+          opacity: 50%;
+        }
+      }
+    }
+  }
   #main-game {
     display: grid;
     row-gap: 1rem;
     column-gap: 2rem;
     align-items: center;
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-areas:
+        "img card"
+        "galery .";
+      grid-template-columns: 4fr 1fr;
+      grid-template-rows: auto auto;
+      column-gap: 2rem;
+      align-items: center;
+    }
+    .main-game__img {
+      width: 100%;
+      min-height: 460px;
+      max-height: 680px;
+      @media (min-width: 768px) {
+        grid-area: img;
+      }
+    }
+    .mini-galery {
+      display: flex;
+      align-items: center;
+      height: 90px;
+      margin-top: 8px;
+      overflow: hidden;
+      .mini-galery__img {
+        width: 80px;
+        height: 80px;
+        margin: 0 3px;
+        &--selected {
+          border-style: solid;
+          border-color: #c427eb;
+        }
+        &--transparency {
+          opacity: 50%;
+        }
+      }
+    }
     .main-game__card {
       display: flex;
       flex-direction: column;
       min-width: 206px;
-      &--home {
+      & home {
         display: none;
         flex-direction: column;
         min-width: 206px;
