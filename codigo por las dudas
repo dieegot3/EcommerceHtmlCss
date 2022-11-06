@@ -1,8 +1,0 @@
-#menu-mobile {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 86%;
-  margin: auto;
-  padding: 1rem 0;
-}
