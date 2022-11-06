@@ -30,7 +30,7 @@
       display: none;
       align-items: center;
       text-decoration: none;
-      @media (min-width: 1024px) {
+      @media (min-width: 768px) {
         display: flex;
       }
       @media (min-width: 1200px) {
@@ -54,12 +54,14 @@
         letter-spacing: 6px;
         color: #c427eb;
         transition: text-shadow 0.3s ease-in-out;
-        @media (min-width: 1024px) {
-          font-size: 18px;
-          letter-spacing: 6px;
-        }
         &:hover {
           text-shadow: 0 0 12px #cc54eb;
+        }
+        @media (min-width: 768px) {
+          display: none;
+        }
+        @media (min-width: 1200px) {
+          display: block;
         }
       }
     }

@@ -16,6 +16,18 @@
 @import "./container";
 @import "./footer";
 
+/*  G E N E R A L E S  */
+* {
+  font-family: Inter;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.video-espera {
+  margin-top: 1rem;
+}
+
 /*  L I N E A S  Y  S E P A R A D O R E S  */
 
 .line-nav {
@@ -25,39 +37,8 @@
   padding-bottom: 3px;
 }
 
-/*  G E N E R A L E S  */
-* {
-  font-family: Inter;
-  color: #f0f0f0;
-  margin: 0;
-  padding: 0;
-}
-
-/*  G R I D S  */
-
-#most-played {
-  display: grid;
-  grid-template-columns: repeat(3, 0.33fr);
-  grid-auto-rows: 110px;
-  grid-column-gap: 6px;
-  grid-row-gap: 20px;
-  justify-content: space-between;
-}
-
-/*  M E N U  */
-
-.menu-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 34px;
-  min-width: 34px;
-  gap: 6px;
-  background-color: transparent;
-  border: 0;
-}
-
 /*  E T I Q U E T A S  */
+
 body {
   background-color: #28262c;
 }
@@ -92,90 +73,9 @@ li {
   display: inline-block;
 }
 
-/*  B L O Q U E S  */
-
-.most-played__game {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.buy-game {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #34383f;
-  border-radius: 20px;
-}
-
-/*  E L E M E N T O S  */
-
-.buy-game__info {
-  display: flex;
-  justify-content: space-between;
-  width: 78%;
-  margin-left: 20px;
-}
-
-/*  T E X T O  */
-
-.catalogue-game__card__info__time {
-  font-weight: 300;
-  font-style: italic;
-  font-size: 14px;
-  margin: 4px 0;
-}
-
-.catalogue-game__card__info__hs {
-  font-size: 14px;
-  font-style: italic;
-  font-weight: 500;
-}
-
-.mobile-hidden {
-  display: none;
-}
-
-/*  I M A G E N E S  */
 img {
   border-radius: 10px;
   object-fit: cover;
-}
-
-/* B O T O N E S*/
-
-.btn-principal--buy-game {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #1c1f22;
-  height: 60px;
-  width: 20%;
-  min-width: 204px;
-  margin-left: 2rem;
-  color: #f0f0f0;
-  font-size: 1rem;
-  font-family: Sora;
-  font-weight: 600;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 20px;
-}
-
-/*  M E D I A  Q U E R I E S  480px  */
-
-.mobile-hidden {
-  display: block;
-}
-
-/*  M E D I A  Q U E R I E S  768px  */
-/*  INICIO 768 */
-.carousel-item .carousel-caption {
-  display: none;
-}
-
-.mini-galery {
-  grid-area: galery;
 }
 
 /*  A N U L A R  B O O T S T R A P  */
@@ -187,6 +87,10 @@ img {
 
 .container-fluid {
   width: 86%;
+}
+
+ol {
+  padding-left: 0;
 }
 
 p {
@@ -228,4 +132,10 @@ h6 {
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   width: 1rem;
+}
+
+.carousel-item .carousel-caption {
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
