@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*  I M P O R T A C I O N E S  */
 @font-face {
   font-family: Inter;
@@ -261,11 +262,6 @@
 @media (min-width: 768px) {
   .top-position-nav #menu-desktop .searchbar .icon-search {
     right: 1rem;
-  }
-}
-@media (min-width: 1200px) {
-  .top-position-nav #menu-desktop .searchbar .icon-search {
-    width: 26px;
   }
 }
 .top-position-nav #menu-desktop .derecha {
@@ -570,12 +566,9 @@
 }
 @media (min-width: 768px) {
   #container #main-game {
-    display: grid;
     grid-template-areas: "img card" "galery .";
     grid-template-columns: 4fr 1fr;
     grid-template-rows: auto auto;
-    column-gap: 2rem;
-    align-items: center;
   }
 }
 #container #main-game .main-game__img {
@@ -938,6 +931,7 @@ footer .footer__bottom .footer__bottom__identity .footer__icon {
   padding: 0;
 }
 
+/* video de las paginas donde no hay contenido */
 .video-espera {
   margin-top: 1rem;
 }
@@ -991,8 +985,8 @@ img {
 }
 
 /*  A N U L A R  B O O T S T R A P  */
-*,
-::after,
+/* boostrap asigna border box por defecto a todo y al comienzo del proyecto no lo tenia seteado de esta manera, al usar bootstrap esta opcion me rompió el diseño asi que la volví a dejar en unset*/
+* ::after,
 ::before {
   box-sizing: unset;
 }

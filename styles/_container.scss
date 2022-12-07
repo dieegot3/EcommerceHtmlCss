@@ -135,14 +135,11 @@
     column-gap: 2rem;
     align-items: center;
     @media (min-width: 768px) {
-      display: grid;
       grid-template-areas:
         "img card"
         "galery .";
       grid-template-columns: 4fr 1fr;
       grid-template-rows: auto auto;
-      column-gap: 2rem;
-      align-items: center;
     }
     .main-game__img {
       width: 100%;
