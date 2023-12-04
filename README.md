@@ -1,4 +1,4 @@
 # Proyecto Final Coderhouse Desarrollo Web 2022
 
 Link al proyecto subido a la web: 
-https://dieegot3.github.io/tienda-de-videojuegos-nocturne/
+https://dieegot3.github.io/EcommerceHtmlCss/
